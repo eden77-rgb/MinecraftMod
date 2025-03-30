@@ -1,9 +1,9 @@
-package fr.sqool.tutomod.block;
+package fr.sqool.rubymod.block;
 
-import fr.sqool.tutomod.TutoCreativeTabs;
-import fr.sqool.tutomod.TutoMod;
-import fr.sqool.tutomod.block.custom.CryoBlock;
-import fr.sqool.tutomod.item.TutoItem;
+import fr.sqool.rubymod.RubyCreativeTabs;
+import fr.sqool.rubymod.RubyMod;
+import fr.sqool.rubymod.block.custom.RubyOre;
+import fr.sqool.rubymod.item.RubyItem;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
@@ -18,10 +18,10 @@ import net.minecraftforge.registries.RegistryObject;
 
 import java.util.function.Supplier;
 
-public class TutoBlock {
-    public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, TutoMod.MODID);
+public class RubyBlock {
+    public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, RubyMod.MODID);
 
-    public static final RegistryObject<Block> TUTO_BLOCK = registerBlock("tuto_block", () -> new CryoBlock(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(2.0f, 6.0f).requiresCorrectToolForDrops()), TutoCreativeTabs.TUTO_MOD);
+    public static final RegistryObject<Block> RUBY_ORE = registerBlock("ruby_ore", () -> new RubyOre(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(2.0f, 6.0f).requiresCorrectToolForDrops()), RubyCreativeTabs.RUBY_MOD);
 
     private  static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
@@ -30,7 +30,7 @@ public class TutoBlock {
     }
 
     private  static  <T extends Block> RegistryObject<Item> registerBlockItem(String name, RegistryObject<T> block, CreativeModeTab tab) {
-        return TutoItem.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));
+        return RubyItem.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));
     }
 
     public static void register(IEventBus eventBus) {

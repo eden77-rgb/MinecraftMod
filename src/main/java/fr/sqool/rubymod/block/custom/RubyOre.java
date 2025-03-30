@@ -1,10 +1,9 @@
-package fr.sqool.tutomod.block.custom;
+package fr.sqool.rubymod.block.custom;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
-import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.Entity;
@@ -14,9 +13,9 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.BlockHitResult;
 
-public class CryoBlock extends Block {
+public class RubyOre extends Block {
 
-    public CryoBlock(Properties p_49795_) {
+    public RubyOre(Properties p_49795_) {
         super(p_49795_);
     }
 
