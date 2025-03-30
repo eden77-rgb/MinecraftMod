@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "item": "minecraft:stick"
+    },
+    "X": {
+      "item": "minecraft:diamond"
+    },
+    "Y": {
+      "item": "minecraft:raw_copper"
+    }
+  },
+  "pattern": [
+    " Y ",
+    "#X#",
+    " # "
+  ],
+  "result": {
+    "item": "tutomod:tuto_item"
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model":  "tutomod:block/tuto_block"}
+  }
+}
