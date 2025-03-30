@@ -5,15 +5,12 @@
       "item": "minecraft:stick"
     },
     "X": {
-      "item": "minecraft:diamond"
-    },
-    "Y": {
-      "item": "minecraft:raw_copper"
+      "item": "rubymod:ruby_ingot"
     }
   },
   "pattern": [
-    " Y ",
-    "#X#",
+    " X ",
+    " X ",
     " # "
   ],
   "result": {
