@@ -1,5 +1,6 @@
 package fr.sqool.rubymod.item.custom;
 
+import fr.sqool.rubymod.RubyMod;
 import fr.sqool.rubymod.item.RubyItem;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
@@ -11,7 +12,7 @@ import net.minecraft.world.item.crafting.Ingredient;
 import java.util.function.Supplier;
 
 public enum ModArmorMaterials implements ArmorMaterial {
-    RUBY("ruby", 15, new int[]{2, 5, 6, 2}, 25, SoundEvents.ARMOR_EQUIP_DIAMOND, 2.0F, 0.1F, () -> Ingredient.of(RubyItem.RUBY_INGOT.get()));
+    RUBY(RubyMod.MODID + ":ruby", 15, new int[]{2, 5, 6, 2}, 25, SoundEvents.ARMOR_EQUIP_DIAMOND, 2.0F, 0.1F, () -> Ingredient.of(RubyItem.RUBY_INGOT.get()));
 
     private final String name;
     private final int durabilityMultiplier;
