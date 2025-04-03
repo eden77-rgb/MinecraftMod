@@ -2,5 +2,9 @@
   "item.rubymod.ruby_sword": "Ruby Sword",
   "item.rubymod.ruby_ingot": "Ruby Ingot",
   "block.rubymod.ruby_ore": "Ruby Ore",
+  "item.rubymod.ruby_helmet": "Ruby Helmet",
+  "item.rubymod.ruby_chestplate": "Ruby Chestplate",
+  "item.rubymod.ruby_leggings": "Ruby Leggings",
+  "item.rubymod.ruby_boots": "Ruby Boots",
   "itemGroup.ruby_mod": "Ruby Mod"
 }
