@@ -2,6 +2,7 @@ package fr.sqool.rubymod.block;
 
 import fr.sqool.rubymod.RubyCreativeTabs;
 import fr.sqool.rubymod.RubyMod;
+import fr.sqool.rubymod.block.custom.RubyChest;
 import fr.sqool.rubymod.block.custom.RubyOre;
 import fr.sqool.rubymod.item.RubyItem;
 import net.minecraft.world.item.BlockItem;
@@ -22,6 +23,7 @@ public class RubyBlock {
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, RubyMod.MODID);
 
     public static final RegistryObject<Block> RUBY_ORE = registerBlock("ruby_ore", () -> new RubyOre(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(2.0f, 6.0f).requiresCorrectToolForDrops()), RubyCreativeTabs.RUBY_MOD);
+    public static final RegistryObject<Block> RUBY_CHEST = registerBlock("ruby_chest", () -> new RubyChest(BlockBehaviour.Properties.of(Material.METAL).strength(6F).requiresCorrectToolForDrops().noOcclusion()), RubyCreativeTabs.RUBY_MOD);
 
     private  static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
